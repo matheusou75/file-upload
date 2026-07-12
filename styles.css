@@ -1,0 +1,52 @@
+.drop-zone {
+    width: 500px;
+    height: 400px;
+    background-color: #f0f0f0; /* cinza claro igual do video */
+    border: 2px dotted #ccc; /* borda pontilhada cinza */
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s; /* animação suave */
+}
+ 
+
+body{
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+
+.drop-zone p {
+    color: #888; /* texto cinza */
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.drop-zone.active {
+    background-color: #19335a; /* azul escuro quando arrastar */
+    border: 2px dotted #00aaff; /* borda azul */
+}
+
+.drop-zone.active p {
+    color: white; /* texto branco quando azul */
+}
+
+input[type="file"] {
+    display: none; /* esconde o "Procurar" */
+
+}
+.drop-zone {
+    box-shadow: 0 0 25px rgba(255,255,255,0.05);
+}
+.drop-zone img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
